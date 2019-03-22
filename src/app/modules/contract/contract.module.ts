@@ -6,7 +6,10 @@ import { ContractListComponent } from './contract-list/contract-list.component';
 import { ContractAddComponent } from './contract-add/contract-add.component';
 
 @NgModule({
-  declarations: [ContractListComponent, ContractAddComponent],
+  declarations: [
+    ContractListComponent,
+    ContractAddComponent
+  ],
   imports: [
     CommonModule,
     ContractRoutingModule
