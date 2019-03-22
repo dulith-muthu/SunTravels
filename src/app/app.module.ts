@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { from } from 'rxjs';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { SideMenuComponent } from './shared/components/side-menu/side-menu.component';
+import { LoginComponent } from './modules/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    SideMenuComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
