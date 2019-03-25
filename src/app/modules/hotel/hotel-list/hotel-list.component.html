@@ -1,3 +1,39 @@
 <p>
-  hotel-list works!
+
 </p>
+<!--<ul *ngFor="let hotel of hotelList">-->
+<!--<li>-->
+<!--{{hotel.hotelName}}-->
+<!--</li>-->
+<!--</ul>-->
+
+
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Hotel ID</th>
+      <th scope="col">Hotel Name</th>
+      <th scope="col">Hotel Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let hotel of hotelList">
+      <th scope="col"></th>
+      <td>
+        {{hotel.hotelId}}
+      </td>
+      <td>
+        {{hotel.hotelName}}
+      </td>
+      <td>
+        {{hotel.hotelAddress}}
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+<!--<button type="button" class="btn btn-primary">Add Hotel</button>-->
+<!--<button type="button" class="btn btn-primary">Delete Hotel</button>-->
