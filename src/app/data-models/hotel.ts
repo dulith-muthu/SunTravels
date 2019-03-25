@@ -1,5 +1,10 @@
 export interface Hotel {
-  hotelId: number;
-  hotelName: string;
-  hotelAddress: string
+  id: number;
+  name: string;
+  city: string;
+  country:string;
+  starRate:number;
+  isActive:string;
+  createdAt:string;
+
 }

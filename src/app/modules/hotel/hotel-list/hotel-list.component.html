@@ -4,22 +4,28 @@
     <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Hotel ID</th>
       <th scope="col">Hotel Name</th>
-      <th scope="col">Hotel Address</th>
+      <th scope="col">City</th>
+      <th scope="col">Country</th>
+      <th scope="col">Star Rate</th>
+
+
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let hotel of hotelList">
       <th scope="col"></th>
       <td>
-        {{hotel.hotelId}}
+        {{hotel.name}}
       </td>
       <td>
-        {{hotel.hotelName}}
+        {{hotel.city}}
       </td>
       <td>
-        {{hotel.hotelAddress}}
+        {{hotel.country}}
+      </td>
+      <td>
+        {{hotel.starRate}}
       </td>
     </tr>
 

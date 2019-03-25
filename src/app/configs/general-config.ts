@@ -1,6 +1,6 @@
 
 export const base_url={
-  apiEndpoint: 'http://localhost:8080/SpringMVCHibernate/hotel/list'
+  hotelApiEndpoint: 'http://localhost:8082//api/v1/hotel'
 };
 
 export class GeneralConfig{
