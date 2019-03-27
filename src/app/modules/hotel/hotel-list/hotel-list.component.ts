@@ -9,13 +9,25 @@ import {HotelService} from '../../../services/hotel-service';
 })
 export class HotelListComponent implements OnInit {
   hotelList:Hotel[];
+  selectedRow : Number;
+
   constructor(private router: Router, private hotelService: HotelService) { }
 
   ngOnInit() {
     this.hotelService.getHotels().subscribe(data=>{this.hotelList=data});
   }
 
-  hotelRowClick(hotel){
-    console.log("rowclicked");
+  hotelRowClick(index){
+    this.selectedRow =index;
   }
+
+  hoteAdd(){   
+  }
+  hotelDelete(index){
+    this.hotelList.splice(index,1);
+  }
+
+  hotelUpdate(){
+  }
+  
 }

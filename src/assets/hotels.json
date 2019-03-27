@@ -1,0 +1,38 @@
+[
+    {
+        "city": "Colombo",
+        "country": "SriLanka",
+        "createdAt": "2019-03-27T04:43:38.687Z",
+        "id": 12,
+        "isActive": "1",
+        "name": "Hilton",
+        "starRate": 3
+      },
+      {
+        "city": "Kurenegala",
+        "country": "SriLanka",
+        "createdAt": "2019-03-27T04:43:38.687Z",
+        "id": 10,
+        "isActive": "1",
+        "name": "Hotel Amaya",
+        "starRate": 4
+      },
+      {
+        "city": "Awissawella",
+        "country": "SriLanka",
+        "createdAt": "2019-03-27T04:43:38.687Z",
+        "id": 15,
+        "isActive": "0",
+        "name": "Seethawaka Miracle",
+        "starRate": 2
+      },
+      {
+        "city": "Maradana",
+        "country": "SriLanka",
+        "createdAt": "2019-03-27T04:43:38.687Z",
+        "id": 23,
+        "isActive": "1",
+        "name": "Dhawalagiri",
+        "starRate": 5
+      }
+]

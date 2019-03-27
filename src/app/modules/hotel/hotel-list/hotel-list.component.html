@@ -12,7 +12,7 @@
         
     </div>
     <div class="col">
-      <table class="table">
+      <table class="table" ng-deselect>
         <thead class="thead-dark">
         <tr class="clickable-row">
           <th scope="col">#</th>
@@ -24,10 +24,10 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let hotel of hotelList" ng-click="hotelRowClick(hotel)">
+        <tr *ngFor="let hotel of hotelList; let i =index" (click)="hotelRowClick(i)" [class.active]="i == selectedRow">
           <th scope="col"></th>
           <td>
-            {{hotel.name}}
+           {{hotel.name}} 
           </td>
           <td>
             {{hotel.city}}
@@ -43,6 +43,7 @@
         </tbody>
       </table>
     </div>
+    
 
   </div>
   <div class = 'row'>
@@ -56,7 +57,9 @@
           </div>
  </div>
   </div>
-</div>
 
+  
+
+</div>
 
 
