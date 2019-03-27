@@ -15,4 +15,7 @@ export class HotelListComponent implements OnInit {
     this.hotelService.getHotels().subscribe(data=>{this.hotelList=data});
   }
 
+  hotelRowClick(hotel){
+    console.log("rowclicked");
+  }
 }
