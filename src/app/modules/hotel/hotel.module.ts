@@ -4,6 +4,7 @@ import { HotelsRoutingModule } from './hotel-routing.module';
 import { HotelListComponent } from './hotel-list/hotel-list.component';
 import { HotelAddComponent } from './hotel-add/hotel-add.component';
 import { HotelRoomTypeComponent } from './hotel-room-type/hotel-room-type.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HotelRoomTypeComponent } from './hotel-room-type/hotel-room-type.compon
   ],
   imports: [
     CommonModule,
-    HotelsRoutingModule
+    HotelsRoutingModule,
+    FormsModule
   ]
 })
 export class HotelModule { }

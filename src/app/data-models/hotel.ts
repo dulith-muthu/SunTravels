@@ -1,4 +1,4 @@
-export interface Hotel {
+export class Hotel {
   id: number;
   name: string;
   city: string;
@@ -7,4 +7,13 @@ export interface Hotel {
   isActive:string;
   createdAt:string;
 
+  constructor(
+    name: string,
+    city: string,
+    country:string,
+    starRate:number
+    ){
+    
+  }
 }
+

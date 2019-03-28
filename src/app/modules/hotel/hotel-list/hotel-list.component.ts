@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Hotel} from '../../../data-models/hotel';
-import {Router} from '@angular/router';
+import {Router, ActivatedRoute} from '@angular/router';
 import {HotelService} from '../../../services/hotel-service';
 @Component({
   selector: 'app-hotel-list',
@@ -10,8 +10,13 @@ import {HotelService} from '../../../services/hotel-service';
 export class HotelListComponent implements OnInit {
   hotelList:Hotel[];
   selectedRow : Number;
+  
 
-  constructor(private router: Router, private hotelService: HotelService) { }
+  constructor(
+    private router: Router,
+    private hotelService: HotelService,
+    private route:ActivatedRoute
+    ) { }
 
   ngOnInit() {
     this.hotelService.getHotels().subscribe(data=>{this.hotelList=data});
@@ -21,12 +26,18 @@ export class HotelListComponent implements OnInit {
     this.selectedRow =index;
   }
 
-  hoteAdd(){   
-  }
-  hotelDelete(index){
-    this.hotelList.splice(index,1);
+  hoteAdd(){
+    this.router.navigate(['add'],{relativeTo: this.route});
   }
 
+  hotelDelete(index){
+    console.log(index);
+    if(index!=undefined){
+    this.hotelList.splice(index,1);
+    }
+
+
+}
   hotelUpdate(){
   }
   

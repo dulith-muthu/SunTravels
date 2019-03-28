@@ -48,6 +48,7 @@ export class HotelService{
       console.log(`${operation} failed: ${error.message}`);
       return of(result as T);
     };
+    
   }
 
 }
