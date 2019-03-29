@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Hotel} from '../../../data-models/hotel';
 import {Router} from '@angular/router';
-import {HotelService} from '../../../services/hotel-service';
+import {HotelService} from '../../../services/hotel.service';
 @Component({
   selector: 'app-hotel-list',
   templateUrl: './hotel-list.component.html',
